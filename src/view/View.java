@@ -47,8 +47,8 @@ public class View extends JFrame {
         super();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(550, 400);
-        setMinimumSize(new Dimension(550, 400));
-        setMaximumSize(new Dimension(501, 401));
+        setMinimumSize(new Dimension(600, 400));
+
         add(panel);
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.add(panelup);
@@ -59,10 +59,20 @@ public class View extends JFrame {
         panelA.add(new JLabel("A"));
         panelA.add(panelAone);
         panelA.add(panelAtwo);
+        panelA.setBorder(BorderFactory.createLineBorder(Color.black));
+        panelB.setBorder(BorderFactory.createLineBorder(Color.black));
 
         manager = new Manager();
         update(manager);
 
+        label11.setPreferredSize(new Dimension(110, 20));
+        label11.setBorder(BorderFactory.createLineBorder(Color.black));
+        label12.setPreferredSize(new Dimension(110, 20));
+        label12.setBorder(BorderFactory.createLineBorder(Color.black));
+        label21.setPreferredSize(new Dimension(110, 20));
+        label21.setBorder(BorderFactory.createLineBorder(Color.black));
+        label22.setPreferredSize(new Dimension(110, 20));
+        label22.setBorder(BorderFactory.createLineBorder(Color.black));
         panelAone.add(label11);
         panelAone.add(label12);
         panelAtwo.add(label21);
@@ -76,10 +86,10 @@ public class View extends JFrame {
         panelB.add(panelBtwo);
 
         //textArea11.setMaximumSize(new Dimension(100, 25));
-        textField11.setColumns(15);
-        textField12.setColumns(15);
-        textField21.setColumns(15);
-        textField22.setColumns(15);
+        textField11.setColumns(12);
+        textField12.setColumns(12);
+        textField21.setColumns(12);
+        textField22.setColumns(12);
 
 
         panelBone.add(textField11);
