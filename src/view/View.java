@@ -75,7 +75,7 @@ public class View extends JFrame {
         panelB.add(panelBone);
         panelB.add(panelBtwo);
 
-        textArea11.setMaximumSize(new Dimension(100, 25));
+        //textArea11.setMaximumSize(new Dimension(100, 25));
         textField11.setColumns(15);
         textField12.setColumns(15);
         textField21.setColumns(15);
